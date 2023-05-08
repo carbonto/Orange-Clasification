@@ -2,3 +2,8 @@ theme: jekyll-theme-minimal
 title: Orange Clasification 
 Author: Pedro, Carlos, Leopoldo, David
 description: Proyecto de clasificación de naranjas por calibre
+
+navbar-links:
+  Resources:
+    - OpenCV: "https://docs.opencv.org/4.x/"
+    - ABB: "https://new.abb.com/es"
