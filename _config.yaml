@@ -21,3 +21,6 @@ footer-col: "#EAEAEA"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
+
+# Add a search button to the navbar
+post_search: true
