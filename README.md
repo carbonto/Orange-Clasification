@@ -18,6 +18,8 @@ Por otro lado se encuentra el codigo de robot studio, donde se ha realizado una 
 ### Instalación 🔧 <a name = "instalacion"> </a>
 Para realizar pruebas y test en el proyecto realizado es necesaria la instalación de diversas herramientas:
 - Instalación de [Robot Studio](https://new.abb.com/products/robotics/es/robotstudio)
+- Instalación de [Python 3](https://www.python.org/downloads/)
+- Instalación de [Pip](https://pypi.org/)
 - Instalación de [Open CV](https://opencv.org/)
 ```
 pip install opencv-python
