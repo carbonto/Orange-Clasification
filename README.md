@@ -16,3 +16,8 @@ pip install opencv-python
 
 ## Simulación Robot Studio
 
+
+## Pruebas realizadas
+
+
+## Conclusiones y trabajo futuro
