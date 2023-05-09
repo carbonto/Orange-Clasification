@@ -12,7 +12,8 @@ Por otro lado se encuentra el codigo de robot studio, donde se ha realizado una 
 - [Segmentación OpenCV](#segmentacion)
 - [Simulación RobotStudio](#robot)
 - [Pruebas realizadas](#pruebas)
-- [Conclusiones y trabajo futuro](#conclusiones)
+- [Conclusiones](#conclusiones)
+- [Trabajo futuro](#Trabajofuturo)
 - [Autores](#autores)
 
 ### Instalación 🔧 <a name = "instalacion"> </a>
@@ -50,9 +51,21 @@ Para probar la segmentación y detección de radio de las naranjas se ha creado 
 
 ````
 
-## Conclusiones y trabajo futuro <a name = "conclusiones"> </a>
+## Conclusiones <a name = "conclusiones"> </a>
+En este proyecto se ha desarrollado un sistema de segmentación de naranjas por calibre, utilizando técnicas de visión por computadora y aprendizaje profundo, y se ha simulado el movimiento de un robot SCARA en el software Robot Studio para su clasificación. Se ha logrado una precisión razonable en la detección y clasificación de las naranjas en diferentes calibres, lo que podría resultar en una mejora significativa en la eficiencia y precisión del proceso de clasificación manual.
 
+La simulación del robot SCARA en Robot Studio permitió evaluar la viabilidad de un sistema automatizado de clasificación de naranjas por calibre y proporcionó una comprensión detallada de la integración del proceso de clasificación de naranjas y la manipulación de un robot.
 
+Sin embargo, hay ciertas limitaciones en el modelo actual que podrían ser mejoradas en trabajos futuros. Uno de los principales desafíos es la variabilidad en el tamaño, forma y color de las naranjas, lo que puede afectar la precisión de la segmentación y clasificación. Además, se podría explorar la posibilidad de integrar otras técnicas de procesamiento de imágenes, como la eliminación de ruido y la normalización de color, para mejorar aún más el rendimiento del modelo.
+
+Este proyecto sienta las bases para un sistema automatizado de clasificación de naranjas por calibre, lo que podría ser beneficioso para la industria agrícola en términos de eficiencia y reducción de costos. Se espera que este trabajo inspire futuras investigaciones en esta área y proporcione una base sólida para el desarrollo de soluciones más avanzadas y precisas en el futuro.
+## Trabajo futuro <a name = "Trabajofuturo"> </a>
+- Investigar la integración del modelo de segmentación y clasificación de naranjas con el control de un robot SCARA real en un ambiente de producción.
+- Entrenar y evaluar modelos de segmentación de naranjas con diferentes arquitecturas de redes neuronales.
+- Investigar técnicas adicionales de procesamiento de imágenes para mejorar la precisión del modelo.
+- Realizar pruebas en diferentes condiciones de iluminación y en diferentes tipos de naranjas para evaluar la robustez del modelo.
+- Desarrollar una aplicación web o móvil para que los usuarios puedan cargar una imagen de una naranja y obtener su clasificación de calibre automáticamente.
+- Evaluar el costo-beneficio de implementar un sistema automatizado de clasificación de naranjas en una empresa agrícola.
 ## ✍️ Autores <a name = "autores"> </a>
 - [David](https://github.com/carbonto)
 - [Pedro](https://github.com/pedrolol440)
