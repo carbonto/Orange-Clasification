@@ -26,14 +26,29 @@ pip install opencv-python
 ```
 
 ## Segmentación OpenCV <a name = "segmentacion"> </a>
+Dentro de la carpeta Orange-Segmentation se encuentran diversos archivos que nos ayudarán al proceso de segmetanción de las naranjas. Primero tenemos el script orange_radius.py el cual convierte a HSV, segmenta los objetos de color naranja y saca el radio del mismo.
+```
+python3 orange_radius.py
 
+```
+Otro script implementado es orange_radius_vid.py que realiza el mismo proceso que el anterior pero para videos como pueden ser lo videos obtenidos con la camara del robot para su procesamiento.
 
+```
+python3 orange_radius_vid.py
+
+```
+Las pruebas realizadas con la segmentación se encuentran en el siguiente apartado [Pruebas realizadas](#pruebas)
 
 ## Simulación Robot Studio <a name = "robot"> </a>
 
 
 ## Pruebas realizadas <a name = "pruebas"> </a>
+Para probar la segmentación y detección de radio de las naranjas se ha creado un script llamado evaluate.sh el cual ejecutar varias veces orange_radius.py con las distintas imagenes de prueba y se ven los resultados obtenidos
 
+```
+./evaluate.sh
+
+````
 
 ## Conclusiones y trabajo futuro <a name = "conclusiones"> </a>
 
