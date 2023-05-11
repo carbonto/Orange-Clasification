@@ -15,10 +15,17 @@ args = vars(ap.parse_args())
 path = os.path.join('images', '{}.jpeg'.format(args['image']))
 n = args['image']
 save_path = os.path.join('results', '{}.png'.format(n))
+img = cv.imread(path)
+
+#Reescalar la imagen 
+rescale_width = 640
+rescale_height = 640
+img = cv.resize(img, (rescale_width, rescale_height))
 
 #Conversion a HSV
-img = cv.imread(path)
 img_hsv = cv.cvtColor(img,cv.COLOR_BGR2HSV)
+
+pixel_to_cm = 0.15  # Relación de conversión de píxeles a centímetros
 
 # Definir los rangos de naranja
 lower_orange1 = np.array([0, 50, 50])
@@ -38,9 +45,11 @@ for i in contours:
 
     x, y, w, h = cv.boundingRect(i)
     center = ((x+x+w)//2, (y+y+h)//2)
-    (x,y), radius = cv.minEnclosingCircle(i)
+    area = cv.contourArea(i)
+    radius = np.sqrt(area / np.pi) * pixel_to_cm
+    # (x,y), radius = cv.minEnclosingCircle(i)
     cv.circle(img, (center), 2, (255, 0, 0), 2)
-    cv.putText(img, "R: {} ".format(radius), (center[0]-45, center[1]+40), cv.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 1)
+    cv.putText(img, "R: {:.2f} cm".format(radius * pixel_to_cm), (center[0]-45, center[1]+40), cv.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 1)
     # cv.putText(img, "R: ", (center[0]-45, center[1]+40), cv.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 1)
 
 # Aplicar la máscara a la imagen original
