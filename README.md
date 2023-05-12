@@ -3,7 +3,6 @@ El proyecto consiste en la clasificación de naranjas por calibre, en el siguien
 Por otro lado se encuentra el codigo de robot studio, donde se ha realizado una simulación del que sería el proceso real de clasifación con el robot Scara.
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/carbonto/Orange-Clasification/issues)
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/carbonto/Orange-Clasification/pulls)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
