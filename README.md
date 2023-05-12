@@ -64,7 +64,7 @@ python3 orange_radius_vid.py
 ```
 
 De esta manera optenemos los siguientes resultados:
-![Orange Video Result](naranjita.avi)
+![Orange Video Result](Video_clasification.gif)
 
 ## Conclusiones <a name = "conclusiones"> </a>
 En este proyecto se ha desarrollado un sistema de segmentación de naranjas por calibre, utilizando técnicas de visión por computadora y aprendizaje profundo, y se ha simulado el movimiento de un robot SCARA en el software Robot Studio para su clasificación. Se ha logrado una precisión razonable en la detección y clasificación de las naranjas en diferentes calibres, lo que podría resultar en una mejora significativa en la eficiencia y precisión del proceso de clasificación manual.
