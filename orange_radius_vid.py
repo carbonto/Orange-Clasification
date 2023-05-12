@@ -28,7 +28,7 @@ scale_factor_y = rescale_height / height
 
 #Opciones de guardado
 # Define el codec y crea el objeto VideoWriter. El resultado se guarda en el archivo 'output_path'.
-fourcc = cv.VideoWriter_fourcc(*'XVID')  # Codec de video para el archivo de salida
+fourcc = cv.VideoWriter_fourcc(*'MJPG')  # Codec de video para el archivo de salida
 out = cv.VideoWriter('naranjita.avi', fourcc, 30.0, (rescale_width, rescale_height))
 
 

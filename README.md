@@ -44,12 +44,27 @@ Las pruebas realizadas con la segmentación se encuentran en el siguiente aparta
 
 
 ## Pruebas realizadas <a name = "pruebas"> </a>
+### Segmentacion de imagenes 
 Para probar la segmentación y detección de radio de las naranjas se ha creado un script llamado evaluate.sh el cual ejecutar varias veces orange_radius.py con las distintas imagenes de prueba y se ven los resultados obtenidos
 
 ```
 ./evaluate.sh
 
 ````
+De esta manera optenemos los siguientes resultados:
+![alt text](https://github.com/carbonto/Orange-Clasification/tree/main/Orange_segmentation/results/1.png)
+
+
+### Segmentación de videos
+Para probar la segmentación y detección de radio de las naranjas se ha creado un script llamado orange_radius_vid.py el cual sería capaz de segmentar mediante video la imagen que le pasa el robot de la camara y sacar el radio de la naranja. En nuestro caso se ha realizado la prueba utilizando un video con el punto de vista que tendría la camara del robot en el proceso de clasificación de naranjas.
+
+```
+python3 orange_radius_vid.py
+
+```
+
+De esta manera optenemos los siguientes resultados:
+![alt text](https://github.com/carbonto/Orange-Clasification/tree/main/Orange_segmentation/naranjita.avi)
 
 ## Conclusiones <a name = "conclusiones"> </a>
 En este proyecto se ha desarrollado un sistema de segmentación de naranjas por calibre, utilizando técnicas de visión por computadora y aprendizaje profundo, y se ha simulado el movimiento de un robot SCARA en el software Robot Studio para su clasificación. Se ha logrado una precisión razonable en la detección y clasificación de las naranjas en diferentes calibres, lo que podría resultar en una mejora significativa en la eficiencia y precisión del proceso de clasificación manual.
