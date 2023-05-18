@@ -66,6 +66,9 @@ while True:
     contours, _ = cv.findContours(mask_orange, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_NONE)
     cv.drawContours(frame, contours, -1, (255, 0, 0), 2)
 
+
+#En este bucle se busca el centro de los contornos, se calcula 
+# el area y el radio a partir de esta. Finalmente dibujamos el circulo que deberia ser la naranja
     for i in contours:
 
         x, y, w, h = cv.boundingRect(i)

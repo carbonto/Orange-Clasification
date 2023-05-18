@@ -38,9 +38,12 @@ mask_orange1 = cv.inRange(img_hsv, lower_orange1, upper_orange1)
 mask_orange2 = cv.inRange(img_hsv, lower_orange2, upper_orange2)
 mask_orange = cv.bitwise_or(mask_orange1, mask_orange2)
 
+#Encontramos los contornos naranjas una vez aplicada la mascara
 contours, _ = cv.findContours(mask_orange, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_NONE)
 cv.drawContours(img, contours, -1, (255, 0, 0), 2)
 
+#En este bucle se busca el centro de los contornos, se calcula 
+# el area y el radio a partir de esta. Finalmente dibujamos el circulo que deberia ser la naranja
 for i in contours:
 
     x, y, w, h = cv.boundingRect(i)
@@ -52,7 +55,7 @@ for i in contours:
     cv.putText(img, "R: {:.2f} cm".format(radius * pixel_to_cm), (center[0]-45, center[1]+40), cv.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 1)
     # cv.putText(img, "R: ", (center[0]-45, center[1]+40), cv.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 1)
 
-# Aplicar la máscara a la imagen original
+# Aplicar la máscara a la imagen original  para enseñar unicamente la naranja
 result = cv.bitwise_and(img, img, mask=mask_orange)
 
 cv.imwrite(save_path,result)
