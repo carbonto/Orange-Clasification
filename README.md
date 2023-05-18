@@ -40,7 +40,11 @@ python3 orange_radius_vid.py
 Las pruebas realizadas con la segmentación se encuentran en el siguiente apartado [Pruebas realizadas](#pruebas)
 
 ## Simulación Robot Studio <a name = "robot"> </a>
+Para la simulación en Robot Studio hemos empleado el robot Scara ya que es el mas adecuado y economico para nuestro proposito de clasificación de naranjas por calibres. En la siguiente imagen podemos ver el robot empleado.
+![Robot Scara](/robot_scara.png)
 
+
+![Estacion Completa](/Estacion_completa.png)
 
 ## Pruebas realizadas <a name = "pruebas"> </a>
 ### Segmentacion de imagenes 
