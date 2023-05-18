@@ -1,13 +1,13 @@
 # Orange-Clasification 🍊🤖️
-El proyecto consiste en la clasificación de naranjas por calibre, en el siguiente repositorio se encuentra por una parte el codigo de OpenCV para la detección y clasifación de dichas naranjas.
-Por otro lado se encuentra el codigo de robot studio, donde se ha realizado una simulación del que sería el proceso real de clasifación con el robot Scara.
+El proyecto consiste en la clasificación de naranjas por calibre, en el siguiente repositorio se encuentra por una parte el codigo de OpenCV para la detección y clasificación de dichas naranjas.
+Por otro lado, se encuentra el codigo de Robot Studio, donde se ha realizado una simulación del que sería el proceso real de clasifación con el robot Scara.
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/carbonto/Orange-Clasification/pulls)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 ## 📝Indice
-- [Intalación](#instalacion)
+- [Instalación](#instalacion)
 - [Segmentación OpenCV](#segmentacion)
 - [Simulación RobotStudio](#robot)
 - [Pruebas realizadas](#pruebas)
@@ -26,12 +26,12 @@ pip install opencv-python
 ```
 
 ## Segmentación OpenCV <a name = "segmentacion"> </a>
-Dentro de la carpeta Orange-Segmentation se encuentran diversos archivos que nos ayudarán al proceso de segmetanción de las naranjas. Primero tenemos el script orange_radius.py el cual convierte a HSV, segmenta los objetos de color naranja y saca el radio del mismo.
+Dentro de la carpeta Orange-Segmentation se encuentran diversos archivos que nos ayudarán al proceso de segmetanción de las naranjas. Primero tenemos el script orange_radius.py el cual convierte a HSV, segmenta los objetos de color naranja y obtiene el radio del mismo.
 ```
 python3 orange_radius.py
 
 ```
-Otro script implementado es orange_radius_vid.py que realiza el mismo proceso que el anterior pero para videos como pueden ser lo videos obtenidos con la camara del robot para su procesamiento.
+Otro script implementado es orange_radius_vid.py, el cual realiza el mismo proceso que el anterior, pero para videos como los obtenidos con la camara del robot para en el procesamiento de naranjas.
 
 ```
 python3 orange_radius_vid.py
@@ -44,7 +44,7 @@ Las pruebas realizadas con la segmentación se encuentran en el siguiente aparta
 
 ## Pruebas realizadas <a name = "pruebas"> </a>
 ### Segmentacion de imagenes 
-Para probar la segmentación y detección de radio de las naranjas se ha creado un script llamado evaluate.sh el cual ejecutar varias veces orange_radius.py con las distintas imagenes de prueba y se ven los resultados obtenidos
+Para probar la segmentación y detección de radio de las naranjas se ha creado un script llamado evaluate.sh, el cual ejecuta varias veces orange_radius.py con las distintas imagenes de prueba y se ven los resultados obtenidos
 
 ```
 ./evaluate.sh
@@ -55,7 +55,7 @@ De esta manera optenemos los siguientes resultados:
 
 
 ### Segmentación de videos
-Para probar la segmentación y detección de radio de las naranjas se ha creado un script llamado orange_radius_vid.py el cual sería capaz de segmentar mediante video la imagen que le pasa el robot de la camara y sacar el radio de la naranja. En nuestro caso se ha realizado la prueba utilizando un video con el punto de vista que tendría la camara del robot en el proceso de clasificación de naranjas.
+Para probar la segmentación y detección de radio de las naranjas, se ha creado un script llamado orange_radius_vid.py el cual sería capaz de segmentar mediante video la imagen que le pasa el robot de la camara y obtener el radio de la naranja. En nuestro caso, se ha realizado la prueba utilizando un video con el punto de vista que tendría la camara del robot en el proceso de clasificación de naranjas.
 
 ```
 python3 orange_radius_vid.py
