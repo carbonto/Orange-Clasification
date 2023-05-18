@@ -40,10 +40,10 @@ python3 orange_radius_vid.py
 Las pruebas realizadas con la segmentación se encuentran en el siguiente apartado [Pruebas realizadas](#pruebas)
 
 ## Simulación Robot Studio <a name = "robot"> </a>
-Para la simulación en Robot Studio hemos empleado el robot Scara ya que es el mas adecuado y economico para nuestro proposito de clasificación de naranjas por calibres. En la siguiente imagen podemos ver el robot empleado.
+Para la simulación en Robot Studio se ha empleado el robot Scara IRB 910SC de ABB, pues como ya se comentó en la memoria de la práctica 3, es el mas adecuado y rentable para nuestro proyecto de clasificación de naranjas por calibres. En la siguiente imagen podemos ver el robot empleado, en la posición en la cual se dispone a coger la naranja de la cinta para depositarla en las diferentes cajas. Este proceso se realiza una vez se ha detectado el calibre de la naranja con el sistema de visión  artificial:
 ![Robot Scara](/robot_scara.png)
 
-
+En la siguiente imagen se muestra una visión global del sistema. Como se puede observar, el sistema esta formado por una cinta principal, a través del cual llegan las naranjas(represantadas por la esfera gris). Una vez llegan a la posición del robot, se detiene la cinta y se realizaría el proceso de detección de calibre (que en este caso aun no se ha integrado en Robot Studio). Una vez detectado el calibre, el robot cogería la naranja y la transportaría a una de las cajas que se encuentran a los lados del robot. Una vez llenas estas cajas, se activarían las cintas para transportarlas hacia el siguiente punto en la estación en la que se encuentre. Esta disposición no es exactamente la misma que la descrita en la memoria de la práctica 3. Esto se debe principalmente que las limitaciones de Robot Studio no permitieron recrear la idea de estación deseada y se tuvo que adaptar a lo anteriormente descrito.
 ![Estacion Completa](/Estacion_completa.png)
 
 ## Pruebas realizadas <a name = "pruebas"> </a>
@@ -70,7 +70,7 @@ De esta manera optenemos los siguientes resultados:
 ![Orange Video Result](Video_clasification.gif)
 
 ## Conclusiones <a name = "conclusiones"> </a>
-En este proyecto se ha desarrollado un sistema de segmentación de naranjas por calibre, utilizando técnicas de visión por computadora y aprendizaje profundo, y se ha simulado el movimiento de un robot SCARA en el software Robot Studio para su clasificación. Se ha logrado una precisión razonable en la detección y clasificación de las naranjas en diferentes calibres, lo que podría resultar en una mejora significativa en la eficiencia y precisión del proceso de clasificación manual.
+En este proyecto se ha desarrollado un sistema de segmentación de naranjas por calibre, utilizando técnicas de visión por computadora, y se ha simulado el movimiento de un robot SCARA en el software Robot Studio para su clasificación. Se ha logrado una precisión razonable en la detección y clasificación de las naranjas en diferentes calibres, lo que podría resultar en una mejora significativa en la eficiencia y precisión del proceso de clasificación manual.
 
 La simulación del robot SCARA en Robot Studio permitió evaluar la viabilidad de un sistema automatizado de clasificación de naranjas por calibre y proporcionó una comprensión detallada de la integración del proceso de clasificación de naranjas y la manipulación de un robot.
 
@@ -82,7 +82,6 @@ Este proyecto sienta las bases para un sistema automatizado de clasificación de
 - Entrenar y evaluar modelos de segmentación de naranjas con diferentes arquitecturas de redes neuronales.
 - Investigar técnicas adicionales de procesamiento de imágenes para mejorar la precisión del modelo.
 - Realizar pruebas en diferentes condiciones de iluminación y en diferentes tipos de naranjas para evaluar la robustez del modelo.
-- Desarrollar una aplicación web o móvil para que los usuarios puedan cargar una imagen de una naranja y obtener su clasificación de calibre automáticamente.
 - Evaluar el costo-beneficio de implementar un sistema automatizado de clasificación de naranjas en una empresa agrícola.
 ## ✍️ Autores <a name = "autores"> </a>
 - [David](https://github.com/carbonto)
