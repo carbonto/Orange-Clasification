@@ -1,10 +1,10 @@
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/carbonto/Orange-Clasification/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
 # Orange-Clasification 🍊🤖️
 El proyecto consiste en la clasificación de naranjas por calibre. Como ya se comentó en la practica 3, el sistema ideado se basaba en un robot scara que depositaba las naranjas en distintas cajas según el calibre detectado con un sistema de visón artificial. En el siguiente repositorio se encuentra por una parte el codigo de OpenCV para la detección y clasificación de dichas naranjas por camara, y 
 por otro lado, se encuentra el codigo de Robot Studio, donde se ha realizado una simulación del que sería el proceso real de clasificación con el robot Scara.
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/carbonto/Orange-Clasification/pulls)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
 ## 📝Indice
 - [Instalación](#instalacion)
 - [Segmentación OpenCV](#segmentacion)
