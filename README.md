@@ -46,6 +46,9 @@ Para la simulación en Robot Studio se ha empleado el robot Scara IRB 910SC de A
 En la siguiente imagen se muestra una visión global del sistema. Como se puede observar, el sistema esta formado por una cinta principal, a través del cual llegan las naranjas(represantadas por la esfera gris). Una vez llegan a la posición del robot, se detiene la cinta y se realizaría el proceso de detección de calibre (que en este caso aun no se ha integrado en Robot Studio). Una vez detectado el calibre, el robot cogería la naranja y la transportaría a una de las cajas que se encuentran a los lados del robot. Una vez llenas estas cajas, se activarían las cintas para transportarlas hacia el siguiente punto en la estación en la que se encuentre. Esta disposición no es exactamente la misma que la descrita en la memoria de la práctica 3. Esto se debe principalmente que las limitaciones de Robot Studio no permitieron recrear la idea de estación deseada y se tuvo que adaptar a lo anteriormente descrito.
 ![Estacion Completa](/Estacion_completa.png)
 
+![Robot Studio Classification](Classification_Robot_Studio.gif)
+
+
 ## Pruebas realizadas <a name = "pruebas"> </a>
 ### Segmentacion de imagenes 
 Para probar la segmentación y detección de radio de las naranjas se ha creado un script llamado evaluate.sh, el cual ejecuta varias veces orange_radius.py con las distintas imagenes de prueba y se ven los resultados obtenidos
