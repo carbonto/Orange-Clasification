@@ -77,6 +77,7 @@ python3 orange_radius_vid.py
 De esta manera optenemos los siguientes resultados:
 ![Orange Video Result](Video_clasification.gif)
 
+### Pruebas en robot y camara real 
 Una vez hemos obtenido el calibre de la naranja mediante el programa escrito en OpenCV, tenemos que conectando ese script al robot y usando la cámara "Integrated Visión" el robot se mueve directamente hacía la naranja y la coje para ponerla en su correpondiente caja. El vídeo que se muestra a continuación no es significativo del proyecto, simplemente es un ejemplo puesto que la estación en RobotStudio se ha desarrollado para otro robot, es una aproximación de como sería, además de que no  es posible recoger la naranja puesto que el compresor del robot del laboratorio funciona de manera errática.
 
 ![OrangeRobotTrial](video_fondo_balnco.gif)
