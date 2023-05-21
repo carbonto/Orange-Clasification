@@ -46,8 +46,15 @@ Para la simulación en Robot Studio se ha empleado el robot Scara IRB 910SC de A
 En la siguiente imagen se muestra una visión global del sistema. Como se puede observar, el sistema esta formado por una cinta principal, a través del cual llegan las naranjas(represantadas por la esfera gris). Una vez llegan a la posición del robot, se detiene la cinta y se realizaría el proceso de detección de calibre (que en este caso aun no se ha integrado en Robot Studio). Una vez detectado el calibre, el robot cogería la naranja y la transportaría a una de las cajas que se encuentran a los lados del robot. Una vez llenas estas cajas, se activarían las cintas para transportarlas hacia el siguiente punto en la estación en la que se encuentre. Esta disposición no es exactamente la misma que la descrita en la memoria de la práctica 3. Esto se debe principalmente que las limitaciones de Robot Studio no permitieron recrear la idea de estación deseada y se tuvo que adaptar a lo anteriormente descrito.
 ![Estacion Completa](/Estacion_completa.png)
 
+A continuación se muestra un video en el que se puede observar el funcionamiento del sistema en la estación de Robot Studio:
 ![Robot Studio Classification](Classification_Robot_Studio.gif)
-
+Se ha conseguido simular de manera bastante precisa el funcionamiento de como sería el sistema real. Únicamente difiere en que para simular la llegada de naranjas al robot por la cinta, una vez el robot la deposita en la caja, esta desaparece y vuelve a aparecer en la posición inicial para ser transportado hacia el robot de nuevo. Por tanto, la lógica e implementación del sistema del sistema se basa en lo siguiente:
+- El robot coge la primera naranja y la deja en la primera caja utilizando componentes attacher y dettacher de Robot Studio.
+- La naranja se reposiciona al comienzo de la cinta cuando la deja el robot utilizando un componente Positioner.
+- La naranja empieza a moverse hacia al robot por la cinta utilizando un componente LinearMover.
+- Se utiliza un componente Plane Sensor que detecta cuando la naranja ha llegado a la posición. 
+- Una vez detecta que ha llegado se desactiva el componente LinearMover para que se deje de mover la naranja.
+- El robot la coge y se vuelve a iniciar todo el proceso.
 
 ## Pruebas realizadas <a name = "pruebas"> </a>
 ### Segmentacion de imagenes 
