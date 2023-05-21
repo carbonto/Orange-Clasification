@@ -1,7 +1,6 @@
 # Orange-Clasification 🍊🤖️
-El proyecto consiste en la clasificación de naranjas por calibre, en el siguiente repositorio se encuentra por una parte el codigo de OpenCV para la detección y clasificación de dichas naranjas.
-Por otro lado, se encuentra el codigo de Robot Studio, donde se ha realizado una simulación del que sería el proceso real de clasifación con el robot Scara.
-
+El proyecto consiste en la clasificación de naranjas por calibre. Como ya se comentó en la practica 3, el sistema ideado se basaba en un robot scara que depositaba las naranjas en distintas cajas según el calibre detectado con un sistema de visón artificial. En el siguiente repositorio se encuentra por una parte el codigo de OpenCV para la detección y clasificación de dichas naranjas por camara, y 
+por otro lado, se encuentra el codigo de Robot Studio, donde se ha realizado una simulación del que sería el proceso real de clasificación con el robot Scara.
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/carbonto/Orange-Clasification/pulls)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
@@ -24,21 +23,6 @@ Para realizar pruebas y test en el proyecto realizado es necesaria la instalaci�
 ```
 pip install opencv-python
 ```
-
-## Segmentación OpenCV <a name = "segmentacion"> </a>
-Dentro de la carpeta Orange-Segmentation se encuentran diversos archivos que nos ayudarán al proceso de segmetanción de las naranjas. Primero tenemos el script orange_radius.py el cual convierte a HSV, segmenta los objetos de color naranja y obtiene el radio del mismo.
-```
-python3 orange_radius.py
-
-```
-Otro script implementado es orange_radius_vid.py, el cual realiza el mismo proceso que el anterior, pero para videos como los obtenidos con la camara del robot para en el procesamiento de naranjas.
-
-```
-python3 orange_radius_vid.py
-
-```
-Las pruebas realizadas con la segmentación se encuentran en el siguiente apartado [Pruebas realizadas](#pruebas)
-
 ## Simulación Robot Studio <a name = "robot"> </a>
 Para la simulación en Robot Studio se ha empleado el robot Scara IRB 910SC de ABB, pues como ya se comentó en la memoria de la práctica 3, es el mas adecuado y rentable para nuestro proyecto de clasificación de naranjas por calibres. En la siguiente imagen podemos ver el robot empleado, en la posición en la cual se dispone a coger la naranja de la cinta para depositarla en las diferentes cajas. Este proceso se realiza una vez se ha detectado el calibre de la naranja con el sistema de visión  artificial:
 ![Robot Scara](/robot_scara.png)
@@ -55,6 +39,20 @@ Se ha conseguido simular de manera bastante precisa el funcionamiento de como se
 - Se utiliza un componente Plane Sensor que detecta cuando la naranja ha llegado a la posición. 
 - Una vez detecta que ha llegado se desactiva el componente LinearMover para que se deje de mover la naranja.
 - El robot la coge y se vuelve a iniciar todo el proceso.
+
+## Segmentación OpenCV <a name = "segmentacion"> </a>
+Dentro de la carpeta Orange-Segmentation se encuentran diversos archivos que nos ayudarán al proceso de segmetanción de las naranjas. Primero tenemos el script orange_radius.py el cual convierte a HSV, segmenta los objetos de color naranja y obtiene el radio del mismo.
+```
+python3 orange_radius.py
+
+```
+Otro script implementado es orange_radius_vid.py, el cual realiza el mismo proceso que el anterior, pero para videos como los obtenidos con la camara del robot para en el procesamiento de naranjas.
+
+```
+python3 orange_radius_vid.py
+
+```
+Las pruebas realizadas con la segmentación se encuentran en el siguiente apartado [Pruebas realizadas](#pruebas)
 
 ## Pruebas realizadas <a name = "pruebas"> </a>
 ### Segmentacion de imagenes 
