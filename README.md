@@ -79,6 +79,10 @@ python3 orange_radius_vid.py
 De esta manera optenemos los siguientes resultados:
 ![Orange Video Result](Video_clasification.gif)
 
+Una vez hemos obtenido el calibre de la naranja mediante el programa escrito en OpenCV, tenemos que conectando ese script al robot y usando la cámara "Integrated Visión" el robot se mueve directamente hacía la naranja y la coje para ponerla en su correpondiente caja. El vídeo que se muestra a continuación no es significativo del proyecto, simplemente es un ejemplo puesto que la estación en RobotStudio se ha desarrollado para otro robot, es una aproximación a como sería.
+
+![OrangeRobotTrial](video_fondo_balnco.gif)
+
 ## Conclusiones <a name = "conclusiones"> </a>
 En este proyecto se ha desarrollado un sistema de segmentación de naranjas por calibre, utilizando técnicas de visión por computadora, y se ha simulado el movimiento de un robot SCARA en el software Robot Studio para su clasificación. Se ha logrado una precisión razonable en la detección y clasificación de las naranjas en diferentes calibres, lo que podría resultar en una mejora significativa en la eficiencia y precisión del proceso de clasificación manual.
 
